@@ -71,7 +71,7 @@ router.get('/', async (req, res) => {
 
 _© 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝙳𝙰𝚁𝙺-𝚂𝙷𝙰𝙳𝙾𝚆_`, 
                         });
-const dt = await DarkShadowPairWeb.sendMessage(user_jid, {
+const pt = await DarkShadowPairWeb.sendMessage(user_jid, {
                             text: sid
                         });
                         
