@@ -4,12 +4,12 @@
     "description": "A multi functional whatsapp bot Web paircode.",
     "main": "index.js",
     "scripts": {
-      "start": "pm2 start index.js --deep-monitoring --attach --name DarkShadow",
-      "stop": "pm2 stop DarkShadow",
-     "restart": "pm2 restart DarkShadow"
+      "start": "pm2 start index.js --deep-monitoring --attach --name prabath",
+      "stop": "pm2 stop prabath",
+     "restart": "pm2 restart prabath"
     },
   "dependencies": {
-    "@whiskeysockets/baileys": "6.6.0",
+    "@whiskeysockets/baileys": "^6.6.0",
     "qrcode": "^1.5.3",
     "awesome-phonenumber": "^2.64.0",
     "pino": "^8.1.0",
