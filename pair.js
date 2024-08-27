@@ -62,7 +62,7 @@ router.get('/', async (req, res) => {
                         await DarkShadowPairWeb.sendMessage(user_jid, {
                             image: {
                                 url:
-                                    `https://i.imgur.com/9nuXIHU.jpeg`
+                                    `https://telegra.ph/file/b40d12d259df4ed6b68a5.jpg`
                                 },
                             
                           caption: `*ᴅᴇᴀʀ ᴜsᴇʀ ᴛʜɪs ɪs ʏᴏᴜʀ sᴇssɪᴏɴ ɪᴅ*
