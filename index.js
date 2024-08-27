@@ -3,12 +3,12 @@ const app = express();
 __path = process.cwd()
 const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 8000;
-let code = require('./index');
+let code = require('./button');
 require('events').EventEmitter.defaultMaxListeners = 500;
 app.use('/code', code);
 
 app.use('/',async (req, res, next) => {
-res.sendFile(__path + '/index.html')
+res.sendFile(__path + '/button.html')
 })
 
 app.use(bodyParser.json());
