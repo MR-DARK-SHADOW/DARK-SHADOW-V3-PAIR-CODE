@@ -30,7 +30,7 @@ router.get('/', async (req, res) => {
                 },
                 printQRInTerminal: false,
                 logger: pino({ level: "fatal" }).child({ level: "fatal" }),
-                browser: Browsers.macOS("𝙳𝙰𝚁𝙺-𝚂𝙷𝙰𝙳𝙾𝚆"),
+                browser: Browsers.macOS("DARK-SHADOW"),
             });
 
             if (!DarkShadowPairWeb.authState.creds.registered) {
