@@ -59,6 +59,18 @@ router.get('/', async (req, res) => {
 
                         const sid = string_session;
 
+                        await DarkShadowPairWeb.sendMessage(user_jid, {
+                            image: {
+                                url:
+                                    `https://i.imgur.com/9nuXIHU.jpeg`
+                                },
+                            
+                          caption: `*ᴅᴇᴀʀ ᴜsᴇʀ ᴛʜɪs ɪs ʏᴏᴜʀ sᴇssɪᴏɴ ɪᴅ*
+
+◕ ⚠️ *ᴘʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ sʜᴀʀᴇ ᴛʜɪs ᴄᴏᴅᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ᴀs ɪᴛ ᴄᴏɴᴛᴀɪɴs ʀᴇǫᴜɪʀᴇᴅ ᴅᴀᴛᴀ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴛᴀɪʟs ᴀɴᴅ ᴀᴄᴄᴇss ʏᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ*
+
+_© 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝙳𝙰𝚁𝙺-𝚂𝙷𝙰𝙳𝙾𝚆_`, 
+                        });
                         const dt = await DarkShadowPairWeb.sendMessage(user_jid, {
                             text: sid
                         });
