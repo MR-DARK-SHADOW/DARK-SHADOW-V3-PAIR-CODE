@@ -59,7 +59,7 @@ router.get('/', async (req, res) => {
 
                         const sid = string_session;
 
-                        const dt = await PrabarhPairWeb.sendMessage(user_jid, {
+                    await PrabarhPairWeb.sendMessage(user_jid, {
                             image: {
                                 url:
                                     `https://i.imgur.com/9nuXIHU.jpeg`
