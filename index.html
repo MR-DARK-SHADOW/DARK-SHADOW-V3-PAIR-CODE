@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queen-Anuu-MultiDevice</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-image: url('https://cdn.dribbble.com/userupload/6278539/file/original-9507c8d12da71f4dcebcaa0f81e614dc.jpeg?resize=1024x1434');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            /* Removed background-color */
+        }
+
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            opacity: 0; /* Start hidden */
+            animation: fadeInTitle 1s forwards; /* Fade-in effect for the title */
+            animation-delay: 0.5s; /* Delay before the title starts fading in */
+        }
+
+        @keyframes fadeInTitle {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .subtitle {
+            font-size: 1em;
+            margin-bottom: 20px;
+            opacity: 0; /* Start hidden */
+            animation: fadeInSubtitle 1s forwards; /* Fade-in effect for the subtitle */
+            animation-delay: 1s; /* Delay before the subtitle starts fading in */
+        }
+
+        @keyframes fadeInSubtitle {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .button {
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #333;
+            border-radius: 50px;
+            text-decoration: none;
+            overflow: hidden;
+            background: linear-gradient(90deg, #333, #666, #333);
+            opacity: 0; /* Start hidden */
+            animation: fadeInButton 1s forwards; /* Fade-in effect for the buttons */
+        }
+
+        @keyframes fadeInButton {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .button:nth-of-type(1) {
+            animation-delay: 1.5s; /* Delay before the first button starts fading in */
+        }
+
+        .button:nth-of-type(2) {
+            animation-delay: 2s; /* Delay before the second button starts fading in */
+        }
+
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+            animation: shimmer 2s infinite;
+            animation-delay: 1.5s; /* Delay before the shimmer effect starts */
+        }
+
+        @keyframes shimmer {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+
+        .button:active {
+            transform: scale(1.1); /* Zoom in effect */
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">DARK SHADOW MD</div>
+        <div class="subtitle">How do you want to pair?</div>
+        <a href="qr.html" class="button">QR</a>
+        <a href="pair.html" class="button">Pair Code</a>
+    </div>
+</body>
+</html>
